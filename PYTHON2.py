@@ -1,0 +1,265 @@
+
+""" # program illustrates the use of docstrings
+ 
+def helloWorld():
+  # This is a docstring comment
+    """ This program prints out hello world """ 
+    print("Hello World")
+ 
+ 
+helloWorld()
+
+# Python Program to Access
+# characters of String
+ 
+String1 = "GeeksForGeeks"
+print("Initial String: ")
+print(String1)
+ 
+# Printing First character
+print("\nFirst character of String is: ")
+print(String1[0])
+ 
+# Printing Last character
+print("\nLast character of String is: ")
+print(String1[-1])
+
+# Python program to demonstrate
+# Removal of elements in a List
+ 
+# Creating a List
+List = ['G', 'E', 'E', 'K', 'S', 'F',
+        'O', 'R', 'G', 'E', 'E', 'K', 'S']
+print("Initial List: ")
+print(List)
+ 
+# Print elements of a range
+# using Slice operation
+Sliced_List = List[3:8]
+print("\nSlicing elements in a range 3-8: ")
+print(Sliced_List)
+ 
+# Print elements from a
+# pre-defined point to end
+Sliced_List = List[5:]
+print("\nElements sliced from 5th "
+      "element till the end: ")
+print(Sliced_List)
+ 
+# Printing elements from
+# beginning till end
+Sliced_List = List[:]
+print("\nPrinting all elements using slice operation: ")
+print(Sliced_List)  
+# Creating an empty Tuple
+Tuple1 = ()
+print("Initial empty Tuple: ")
+print(Tuple1)
+ 
+# Creating a Tuple
+# with the use of string
+Tuple1 = ('Geeks', 'For')
+print("\nTuple with the use of String: ")
+print(Tuple1)
+ 
+# Creating a Tuple with
+# the use of list
+list1 = [1, 2, 4, 5, 6]
+print("\nTuple using List: ")
+print(tuple(list1))
+ 
+# Creating a Tuple
+# with the use of built-in function
+Tuple1 = tuple('Geeks')
+print("\nTuple with the use of function: ")
+print(Tuple1) 
+
+# Creating a Tuple
+# with Mixed Datatype
+Tuple1 = (5, 'Welcome', 7, 'Geeks')
+print("\nTuple with Mixed Datatypes: ")
+print(Tuple1)
+ 
+# Creating a Tuple
+# with nested tuples
+Tuple1 = (0, 1, 2, 3)
+Tuple2 = ('python', 'geek')
+Tuple3 = (Tuple1, Tuple2)
+print("\nTuple with nested tuples: ")
+print(Tuple3)
+ 
+# Creating a Tuple
+# with repetition
+Tuple1 = ('Geeks',) * 3
+print("\nTuple with repetition: ")
+print(Tuple1)
+ 
+# Creating a Tuple
+# with the use of loop
+Tuple1 = ('Geeks')
+n = 5
+print("\nTuple with a loop")
+for i in range(int(n)):
+    Tuple1 = (Tuple1,)
+    print(Tuple1)
+# Python program to demonstrate
+# Creation of Set in Python
+ 
+# Creating a Set
+set1 = set()
+print("Initial blank Set: ")
+print(set1)
+ 
+# Creating a Set with
+# the use of a String
+set1 = set("GeeksForGeeks")
+print("\nSet with the use of String: ")
+print(set1)
+ 
+# Creating a Set with
+# the use of Constructor
+# (Using object to Store String)
+String = 'GeeksForGeeks'
+set1 = set(String)
+print("\nSet with the use of an Object: " )
+print(set1)
+ 
+# Creating a Set with
+# the use of a List
+set1 = set(["Geeks", "For", "Geeks"])
+print("\nSet with the use of List: ")
+print(set1)
+ 
+# Creating a Set with
+# the use of a tuple
+t=("Geeks","for","Geeks")
+print("\nSet with the use of Tuple: ")
+print(set(t))
+ 
+# Creating a Set with
+# the use of a dictionary
+d={"Geeks":1,"for":2,"Geeks":3}
+print("\nSet with the use of Dictionary: ")
+print(set(d))# Python program to demonstrate
+# Creation of Set in Python
+ 
+# Creating a Set
+set1 = set()
+print("Initial blank Set: ")
+print(set1)
+ 
+# Creating a Set with
+# the use of a String
+set1 = set("GeeksForGeeks")
+print("\nSet with the use of String: ")
+print(set1)
+ 
+# Creating a Set with
+# the use of Constructor
+# (Using object to Store String)
+String = 'GeeksForGeeks'
+set1 = set(String)
+print("\nSet with the use of an Object: " )
+print(set1)
+ 
+# Creating a Set with
+# the use of a List
+set1 = set(["Geeks", "For", "Geeks"])
+print("\nSet with the use of List: ")
+print(set1)
+ 
+# Creating a Set with
+# the use of a tuple
+t=("Geeks","for","Geeks")
+print("\nSet with the use of Tuple: ")
+print(set(t))
+ 
+# Creating a Set with
+# the use of a dictionary
+d={"Geeks":1,"for":2,"Geeks":3}
+print("\nSet with the use of Dictionary: ")
+print(set(d))
+
+# Python program to demonstrate
+# Creation of Array
+ 
+# importing "array" for array creations
+import array as arr
+ 
+# creating an array with integer type
+a = arr.array('i', [1, 2, 3])
+ 
+# printing original array
+print("The new created array is : ", end=" ")
+for i in range(0, 3):
+    print(a[i], end=" ")
+print()
+ 
+# creating an array with double type
+b = arr.array('d', [2.5, 3.2, 3.3])
+ 
+# printing original array
+print("\nThe new created array is : ", end=" ")
+for i in range(0, 3):
+    print(b[i], end=" ")
+ 
+ #Python program to demonstrate
+ 
+# Creation of Array
+ 
+# importing "array" for array creations
+ 
+import array as arr
+ 
+#creating an array with integer type
+ 
+a=arr.array('i',[1,2,3,4,5,6])
+ 
+# printing original array
+ 
+print("The Before extend array is :",end=" ")
+ 
+for i in range(0,6):
+   
+    print(a[i],end=" ")
+     
+print()
+ 
+# creating an array with using extend method
+ 
+a.extend([7,8,9,10,11,12])
+ 
+# printing original array
+ 
+print("\nThe After extend array is :",end=" ")
+ 
+for i in range(0,12):
+   
+    print(a[i],end=" ")
+ 
+print()
+ 
+#array with float type
+ 
+b = arr.array('d', [2.1,2.2,2.3,2.4,2.5,2.6])
+ 
+print("\nThe before extend array is :",end=" ")
+ 
+for i in range(0,6):
+   
+  print(b[i],end=" ")
+   
+print()
+ 
+#extend function using pass the elements
+ 
+b.extend([2.6,2.7,2.8,2.9])
+ 
+print("\nThe after extend array is :",end=" ")
+ 
+for i in range(0,9+1):
+   
+  print(b[i],end=" ")
+   
+print() 
+"""
